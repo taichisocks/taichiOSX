@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		812650F61AE4EAA7001A87BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812650F51AE4EAA7001A87BB /* AppDelegate.swift */; };
+		812650FA1AE4EAA7001A87BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812650F91AE4EAA7001A87BB /* Images.xcassets */; };
+		812650FD1AE4EAA7001A87BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812650FB1AE4EAA7001A87BB /* Main.storyboard */; };
+		812651091AE4EAA7001A87BB /* taichiOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812651081AE4EAA7001A87BB /* taichiOSXTests.swift */; };
+		8126511B1AE4EB44001A87BB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 812651191AE4EB44001A87BB /* main.c */; };
+		8126511C1AE4EC0C001A87BB /* libshadowsocks-libev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 812651171AE4EB06001A87BB /* libshadowsocks-libev.a */; };
+		8126511E1AE4EC2E001A87BB /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126511D1AE4EC2E001A87BB /* libssl.dylib */; };
+		812651201AE4EC37001A87BB /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126511F1AE4EC37001A87BB /* libcrypto.dylib */; };
+		812651231AE4EC89001A87BB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812651211AE4EC89001A87BB /* SettingViewController.swift */; };
+		812651241AE4EC89001A87BB /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812651221AE4EC89001A87BB /* SettingsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		812651031AE4EAA7001A87BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 812650E81AE4EAA7001A87BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 812650EF1AE4EAA7001A87BB;
+			remoteInfo = taichiOSX;
+		};
+		812651161AE4EB06001A87BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 812651121AE4EB06001A87BB /* shadowsocks-libev.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 812650171AE4E7A7001A87BB;
+			remoteInfo = "shadowsocks-libev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		812650F01AE4EAA7001A87BB /* taichiOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taichiOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		812650F41AE4EAA7001A87BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812650F51AE4EAA7001A87BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		812650F91AE4EAA7001A87BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		812650FC1AE4EAA7001A87BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		812651021AE4EAA7001A87BB /* taichiOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taichiOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		812651071AE4EAA7001A87BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812651081AE4EAA7001A87BB /* taichiOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taichiOSXTests.swift; sourceTree = "<group>"; };
+		812651121AE4EB06001A87BB /* shadowsocks-libev.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "shadowsocks-libev.xcodeproj"; path = "shadowsocks-libev/shadowsocks-libev.xcodeproj"; sourceTree = "<group>"; };
+		812651181AE4EB43001A87BB /* taichiOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taichiOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		812651191AE4EB44001A87BB /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8126511A1AE4EB44001A87BB /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		8126511D1AE4EC2E001A87BB /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		8126511F1AE4EC37001A87BB /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		812651211AE4EC89001A87BB /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		812651221AE4EC89001A87BB /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		812650ED1AE4EAA7001A87BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812651201AE4EC37001A87BB /* libcrypto.dylib in Frameworks */,
+				8126511E1AE4EC2E001A87BB /* libssl.dylib in Frameworks */,
+				8126511C1AE4EC0C001A87BB /* libshadowsocks-libev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812650FF1AE4EAA7001A87BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		812650E71AE4EAA7001A87BB = {
+			isa = PBXGroup;
+			children = (
+				8126511F1AE4EC37001A87BB /* libcrypto.dylib */,
+				8126511D1AE4EC2E001A87BB /* libssl.dylib */,
+				812651121AE4EB06001A87BB /* shadowsocks-libev.xcodeproj */,
+				812650F21AE4EAA7001A87BB /* taichiOSX */,
+				812651051AE4EAA7001A87BB /* taichiOSXTests */,
+				812650F11AE4EAA7001A87BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		812650F11AE4EAA7001A87BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				812650F01AE4EAA7001A87BB /* taichiOSX.app */,
+				812651021AE4EAA7001A87BB /* taichiOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		812650F21AE4EAA7001A87BB /* taichiOSX */ = {
+			isa = PBXGroup;
+			children = (
+				812650F51AE4EAA7001A87BB /* AppDelegate.swift */,
+				812651211AE4EC89001A87BB /* SettingViewController.swift */,
+				812651221AE4EC89001A87BB /* SettingsModel.swift */,
+				812650FB1AE4EAA7001A87BB /* Main.storyboard */,
+				812650F31AE4EAA7001A87BB /* Supporting Files */,
+				812651191AE4EB44001A87BB /* main.c */,
+				8126511A1AE4EB44001A87BB /* main.h */,
+				812651181AE4EB43001A87BB /* taichiOSX-Bridging-Header.h */,
+			);
+			path = taichiOSX;
+			sourceTree = "<group>";
+		};
+		812650F31AE4EAA7001A87BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				812650F91AE4EAA7001A87BB /* Images.xcassets */,
+				812650F41AE4EAA7001A87BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		812651051AE4EAA7001A87BB /* taichiOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				812651081AE4EAA7001A87BB /* taichiOSXTests.swift */,
+				812651061AE4EAA7001A87BB /* Supporting Files */,
+			);
+			path = taichiOSXTests;
+			sourceTree = "<group>";
+		};
+		812651061AE4EAA7001A87BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				812651071AE4EAA7001A87BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		812651131AE4EB06001A87BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				812651171AE4EB06001A87BB /* libshadowsocks-libev.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		812650EF1AE4EAA7001A87BB /* taichiOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126510C1AE4EAA7001A87BB /* Build configuration list for PBXNativeTarget "taichiOSX" */;
+			buildPhases = (
+				812650EC1AE4EAA7001A87BB /* Sources */,
+				812650ED1AE4EAA7001A87BB /* Frameworks */,
+				812650EE1AE4EAA7001A87BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taichiOSX;
+			productName = taichiOSX;
+			productReference = 812650F01AE4EAA7001A87BB /* taichiOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		812651011AE4EAA7001A87BB /* taichiOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126510F1AE4EAA7001A87BB /* Build configuration list for PBXNativeTarget "taichiOSXTests" */;
+			buildPhases = (
+				812650FE1AE4EAA7001A87BB /* Sources */,
+				812650FF1AE4EAA7001A87BB /* Frameworks */,
+				812651001AE4EAA7001A87BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				812651041AE4EAA7001A87BB /* PBXTargetDependency */,
+			);
+			name = taichiOSXTests;
+			productName = taichiOSXTests;
+			productReference = 812651021AE4EAA7001A87BB /* taichiOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		812650E81AE4EAA7001A87BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = taichi;
+				TargetAttributes = {
+					812650EF1AE4EAA7001A87BB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					812651011AE4EAA7001A87BB = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 812650EF1AE4EAA7001A87BB;
+					};
+				};
+			};
+			buildConfigurationList = 812650EB1AE4EAA7001A87BB /* Build configuration list for PBXProject "taichiOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 812650E71AE4EAA7001A87BB;
+			productRefGroup = 812650F11AE4EAA7001A87BB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 812651131AE4EB06001A87BB /* Products */;
+					ProjectRef = 812651121AE4EB06001A87BB /* shadowsocks-libev.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				812650EF1AE4EAA7001A87BB /* taichiOSX */,
+				812651011AE4EAA7001A87BB /* taichiOSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		812651171AE4EB06001A87BB /* libshadowsocks-libev.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libshadowsocks-libev.a";
+			remoteRef = 812651161AE4EB06001A87BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		812650EE1AE4EAA7001A87BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812650FA1AE4EAA7001A87BB /* Images.xcassets in Resources */,
+				812650FD1AE4EAA7001A87BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812651001AE4EAA7001A87BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812650EC1AE4EAA7001A87BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812651241AE4EC89001A87BB /* SettingsModel.swift in Sources */,
+				8126511B1AE4EB44001A87BB /* main.c in Sources */,
+				812650F61AE4EAA7001A87BB /* AppDelegate.swift in Sources */,
+				812651231AE4EC89001A87BB /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812650FE1AE4EAA7001A87BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812651091AE4EAA7001A87BB /* taichiOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		812651041AE4EAA7001A87BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 812650EF1AE4EAA7001A87BB /* taichiOSX */;
+			targetProxy = 812651031AE4EAA7001A87BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		812650FB1AE4EAA7001A87BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812650FC1AE4EAA7001A87BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8126510A1AE4EAA7001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8126510B1AE4EAA7001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8126510D1AE4EAA7001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = taichiOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taichiOSX/taichiOSX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8126510E1AE4EAA7001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = taichiOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taichiOSX/taichiOSX-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		812651101AE4EAA7001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = taichiOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichiOSX.app/Contents/MacOS/taichiOSX";
+			};
+			name = Debug;
+		};
+		812651111AE4EAA7001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = taichiOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichiOSX.app/Contents/MacOS/taichiOSX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812650EB1AE4EAA7001A87BB /* Build configuration list for PBXProject "taichiOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126510A1AE4EAA7001A87BB /* Debug */,
+				8126510B1AE4EAA7001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126510C1AE4EAA7001A87BB /* Build configuration list for PBXNativeTarget "taichiOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126510D1AE4EAA7001A87BB /* Debug */,
+				8126510E1AE4EAA7001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8126510F1AE4EAA7001A87BB /* Build configuration list for PBXNativeTarget "taichiOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812651101AE4EAA7001A87BB /* Debug */,
+				812651111AE4EAA7001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 812650E81AE4EAA7001A87BB /* Project object */;
+}
