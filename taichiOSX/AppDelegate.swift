@@ -57,13 +57,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let localPort = SettingsModel.sharedInstance.localPort
         var c_local_port = CInt(0)
         if let lPort = localPort.toInt() {
+            PacServer.sharedInstance.socks5Port = lPort
             c_local_port = CInt(lPort)
         }
         //        var c_local_port = localPort.cStringUsingEncoding(NSUTF8StringEncoding)!
         
         
         startProxyWithConfig(c_remote_host, c_remote_port, c_method, c_password, c_local_host, c_local_port)
-        
+        PacServer.sharedInstance.start(listenPort: 8100, error: nil)
     }
 
 

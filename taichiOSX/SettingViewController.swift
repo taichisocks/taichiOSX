@@ -81,6 +81,7 @@ class SettingViewController: NSViewController {
         var c_local_host = localHost.cStringUsingEncoding(NSUTF8StringEncoding)!
 
         let localPort = localPortTextField.integerValue
+        PacServer.sharedInstance.socks5Port = localPort
         SettingsModel.sharedInstance.localPort = localPortTextField.stringValue
         var c_local_port = CInt(localPort)
 //        var c_local_port = localPort.cStringUsingEncoding(NSUTF8StringEncoding)!
@@ -88,5 +89,6 @@ class SettingViewController: NSViewController {
         SettingsModel.sharedInstance.saveData()
                 
         startProxyWithConfig(c_remote_host, c_remote_port, c_method, c_password, c_local_host, c_local_port)
+        PacServer.sharedInstance.start(listenPort: 8100, error: nil)
     }
 }

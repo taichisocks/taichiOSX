@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
     </dependencies>
@@ -648,14 +648,14 @@
                 </customObject>
                 <menu id="v7I-gw-ofu">
                     <items>
-                        <menuItem title="Setting" id="Lvu-cX-gcg" userLabel="setting">
+                        <menuItem title="Preferences" id="Lvu-cX-gcg" userLabel="setting">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="exitClicked:" target="Voe-Tx-rLC" id="SJI-xn-GQX"/>
                                 <segue destination="exO-N2-X9X" kind="show" id="DzH-J2-Bl5"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Exit" id="OBe-xK-0dS" userLabel="exit">
+                        <menuItem title="Quit" id="OBe-xK-0dS" userLabel="exit">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="exitClick:" target="Voe-Tx-rLC" id="caY-nY-5Cx"/>
@@ -667,10 +667,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--setting-->
+        <!--Preferences-->
         <scene sceneID="5nV-Qu-9n8">
             <objects>
-                <viewController title="setting" showSeguePresentationStyle="single" id="exO-N2-X9X" customClass="SettingViewController" customModule="taichiOSX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Preferences" showSeguePresentationStyle="single" id="exO-N2-X9X" customClass="SettingViewController" customModule="taichiOSX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="MpS-NO-fTA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -757,12 +757,12 @@
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uZv-hg-k57">
                                 <rect key="frame" x="105" y="201" width="328" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="table" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="d78-oA-fsg" userLabel="table">
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="d78-oA-fsg" userLabel="table">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="xRG-lp-lKb">
                                         <items>
-                                            <menuItem title="table" state="on" id="IY0-t6-RKt" userLabel="table"/>
+                                            <menuItem title="table" id="IY0-t6-RKt" userLabel="table"/>
                                             <menuItem title="rc4" id="Kgu-zR-HCV" userLabel="rc4"/>
                                             <menuItem title="rc4-md5" id="VsU-vu-Uj4" userLabel="rc4-md5"/>
                                             <menuItem title="aes-128-cfb" id="c4N-Ai-Rx2" userLabel="aes-128-cfb"/>
@@ -812,7 +812,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s1j-k7-6Ry">
-                                <rect key="frame" x="354" y="44" width="80" height="32"/>
+                                <rect key="frame" x="374" y="44" width="60" height="32"/>
                                 <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YvM-Gl-ywp">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>

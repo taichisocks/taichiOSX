@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8121AFE51AE60573003E6B01 /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFDE1AE60573003E6B01 /* HttpHandlers.swift */; };
+		8121AFE61AE60573003E6B01 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFDF1AE60573003E6B01 /* HttpParser.swift */; };
+		8121AFE71AE60573003E6B01 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFE01AE60573003E6B01 /* HttpRequest.swift */; };
+		8121AFE81AE60573003E6B01 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFE11AE60573003E6B01 /* HttpResponse.swift */; };
+		8121AFE91AE60573003E6B01 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFE21AE60573003E6B01 /* HttpServer.swift */; };
+		8121AFEA1AE60573003E6B01 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFE31AE60573003E6B01 /* Socket.swift */; };
+		8121AFEF1AE605A1003E6B01 /* SwifterActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFEC1AE605A1003E6B01 /* SwifterActiveRecord.swift */; };
+		8121AFF01AE605A1003E6B01 /* SwifterDatabaseProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFED1AE605A1003E6B01 /* SwifterDatabaseProxy.swift */; };
+		8121AFF11AE605A1003E6B01 /* SwifterSQLiteDatabaseProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFEE1AE605A1003E6B01 /* SwifterSQLiteDatabaseProxy.swift */; };
+		8121AFF31AE605DB003E6B01 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8121AFF21AE605DB003E6B01 /* libsqlite3.dylib */; };
+		8121AFF51AE605F9003E6B01 /* PacServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFF41AE605F9003E6B01 /* PacServer.swift */; };
+		8121AFF91AE61B11003E6B01 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 8121AFF81AE61B11003E6B01 /* proxy.pac */; };
 		812650F61AE4EAA7001A87BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812650F51AE4EAA7001A87BB /* AppDelegate.swift */; };
 		812650FA1AE4EAA7001A87BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812650F91AE4EAA7001A87BB /* Images.xcassets */; };
 		812650FD1AE4EAA7001A87BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812650FB1AE4EAA7001A87BB /* Main.storyboard */; };
@@ -37,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8121AFDE1AE60573003E6B01 /* HttpHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHandlers.swift; path = swifter/HttpHandlers.swift; sourceTree = "<group>"; };
+		8121AFDF1AE60573003E6B01 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = swifter/HttpParser.swift; sourceTree = "<group>"; };
+		8121AFE01AE60573003E6B01 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = swifter/HttpRequest.swift; sourceTree = "<group>"; };
+		8121AFE11AE60573003E6B01 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = swifter/HttpResponse.swift; sourceTree = "<group>"; };
+		8121AFE21AE60573003E6B01 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = swifter/HttpServer.swift; sourceTree = "<group>"; };
+		8121AFE31AE60573003E6B01 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = swifter/Socket.swift; sourceTree = "<group>"; };
+		8121AFEC1AE605A1003E6B01 /* SwifterActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterActiveRecord.swift; path = swifter/ActiveRecord/SwifterActiveRecord.swift; sourceTree = "<group>"; };
+		8121AFED1AE605A1003E6B01 /* SwifterDatabaseProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterDatabaseProxy.swift; path = swifter/ActiveRecord/SwifterDatabaseProxy.swift; sourceTree = "<group>"; };
+		8121AFEE1AE605A1003E6B01 /* SwifterSQLiteDatabaseProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSQLiteDatabaseProxy.swift; path = swifter/ActiveRecord/SwifterSQLiteDatabaseProxy.swift; sourceTree = "<group>"; };
+		8121AFF21AE605DB003E6B01 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8121AFF41AE605F9003E6B01 /* PacServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacServer.swift; sourceTree = "<group>"; };
+		8121AFF81AE61B11003E6B01 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
 		812650F01AE4EAA7001A87BB /* taichiOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taichiOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812650F41AE4EAA7001A87BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812650F51AE4EAA7001A87BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8121AFF31AE605DB003E6B01 /* libsqlite3.dylib in Frameworks */,
 				812651201AE4EC37001A87BB /* libcrypto.dylib in Frameworks */,
 				8126511E1AE4EC2E001A87BB /* libssl.dylib in Frameworks */,
 				8126511C1AE4EC0C001A87BB /* libshadowsocks-libev.a in Frameworks */,
@@ -76,9 +101,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8121AFDC1AE60554003E6B01 /* swifter */ = {
+			isa = PBXGroup;
+			children = (
+				8121AFEB1AE60577003E6B01 /* ActiveRecord */,
+				8121AFDE1AE60573003E6B01 /* HttpHandlers.swift */,
+				8121AFDF1AE60573003E6B01 /* HttpParser.swift */,
+				8121AFE01AE60573003E6B01 /* HttpRequest.swift */,
+				8121AFE11AE60573003E6B01 /* HttpResponse.swift */,
+				8121AFE21AE60573003E6B01 /* HttpServer.swift */,
+				8121AFE31AE60573003E6B01 /* Socket.swift */,
+			);
+			name = swifter;
+			sourceTree = "<group>";
+		};
+		8121AFEB1AE60577003E6B01 /* ActiveRecord */ = {
+			isa = PBXGroup;
+			children = (
+				8121AFEC1AE605A1003E6B01 /* SwifterActiveRecord.swift */,
+				8121AFED1AE605A1003E6B01 /* SwifterDatabaseProxy.swift */,
+				8121AFEE1AE605A1003E6B01 /* SwifterSQLiteDatabaseProxy.swift */,
+			);
+			name = ActiveRecord;
+			sourceTree = "<group>";
+		};
 		812650E71AE4EAA7001A87BB = {
 			isa = PBXGroup;
 			children = (
+				8121AFF21AE605DB003E6B01 /* libsqlite3.dylib */,
 				8126511F1AE4EC37001A87BB /* libcrypto.dylib */,
 				8126511D1AE4EC2E001A87BB /* libssl.dylib */,
 				812651121AE4EB06001A87BB /* shadowsocks-libev.xcodeproj */,
@@ -100,7 +150,9 @@
 		812650F21AE4EAA7001A87BB /* taichiOSX */ = {
 			isa = PBXGroup;
 			children = (
+				8121AFDC1AE60554003E6B01 /* swifter */,
 				812650F51AE4EAA7001A87BB /* AppDelegate.swift */,
+				8121AFF41AE605F9003E6B01 /* PacServer.swift */,
 				812651211AE4EC89001A87BB /* SettingViewController.swift */,
 				812651221AE4EC89001A87BB /* SettingsModel.swift */,
 				812650FB1AE4EAA7001A87BB /* Main.storyboard */,
@@ -115,6 +167,7 @@
 		812650F31AE4EAA7001A87BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8121AFF81AE61B11003E6B01 /* proxy.pac */,
 				812650F91AE4EAA7001A87BB /* Images.xcassets */,
 				812650F41AE4EAA7001A87BB /* Info.plist */,
 			);
@@ -244,6 +297,7 @@
 			files = (
 				812650FA1AE4EAA7001A87BB /* Images.xcassets in Resources */,
 				812650FD1AE4EAA7001A87BB /* Main.storyboard in Resources */,
+				8121AFF91AE61B11003E6B01 /* proxy.pac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +317,18 @@
 			files = (
 				812651241AE4EC89001A87BB /* SettingsModel.swift in Sources */,
 				8126511B1AE4EB44001A87BB /* main.c in Sources */,
+				8121AFE91AE60573003E6B01 /* HttpServer.swift in Sources */,
+				8121AFE51AE60573003E6B01 /* HttpHandlers.swift in Sources */,
+				8121AFF51AE605F9003E6B01 /* PacServer.swift in Sources */,
 				812650F61AE4EAA7001A87BB /* AppDelegate.swift in Sources */,
+				8121AFE61AE60573003E6B01 /* HttpParser.swift in Sources */,
+				8121AFF11AE605A1003E6B01 /* SwifterSQLiteDatabaseProxy.swift in Sources */,
+				8121AFEA1AE60573003E6B01 /* Socket.swift in Sources */,
+				8121AFE71AE60573003E6B01 /* HttpRequest.swift in Sources */,
+				8121AFE81AE60573003E6B01 /* HttpResponse.swift in Sources */,
 				812651231AE4EC89001A87BB /* SettingViewController.swift in Sources */,
+				8121AFF01AE605A1003E6B01 /* SwifterDatabaseProxy.swift in Sources */,
+				8121AFEF1AE605A1003E6B01 /* SwifterActiveRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +524,7 @@
 				8126510E1AE4EAA7001A87BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8126510F1AE4EAA7001A87BB /* Build configuration list for PBXNativeTarget "taichiOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +533,7 @@
 				812651111AE4EAA7001A87BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
